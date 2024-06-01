@@ -1,6 +1,17 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function isPalindrome(string) {
+  let reversedString  = string.split("").reverse().join("");
+  if(string === reversedString ) {
+    return true;
+  }
+  else {
+    return false;
+  }
+
+  
+
 }
+
+console.log(isPalindrome( "abba"));
 
 /* 
   Add your pseudocode here
@@ -23,3 +34,6 @@ if (require.main === module) {
 }
 
 module.exports = isPalindrome;
+
+
+
